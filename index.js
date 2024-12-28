@@ -19,7 +19,7 @@ function calcular() {
     console.log('Cantidad:', cantidad);
     //medidaSeleccionada = 'Taza'
     if (productoSeleccionado != "") {
-        if (cantidad != 0) {
+        if (cantidad > 0) {
             if (medidaSeleccionada === "cucharada") {
                 calcularMedidaCuharada(productoSeleccionado, cantidad);
             } else if (medidaSeleccionada === "taza") {
