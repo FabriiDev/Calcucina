@@ -83,7 +83,15 @@ function calcularMedidaTaza(producto, peso) {
         default:
             medida = 'Producto no reconocido';
     }
-    document.getElementById('resultado').innerHTML = medida.toFixed(2) + " Tazas";
+    let resultado = document.getElementById('resultado');
+
+    resultado.innerHTML = medida.toFixed(2) + " Tazas";
+
+    resultado.classList.add('animate');
+    setTimeout(function () {
+        resultado.classList.remove('animate');
+    }, 300);
+
     return medida.toFixed(2);
 }
 
@@ -126,7 +134,15 @@ function calcularMedidaCuharada(producto, peso) {
         default:
             medida = 'Producto no reconocido';
     }
-    document.getElementById('resultado').innerHTML = medida.toFixed(2) + " Cucharas soperas";
+    let resultado = document.getElementById('resultado');
+
+    
+
+    resultado.classList.add('animate');
+    setTimeout(function () {
+        resultado.classList.remove('animate');
+    }, 300);
+    resultado.innerHTML = medida.toFixed(2) + " Tazas";
     return medida.toFixed(2);
 }
 
@@ -169,6 +185,13 @@ function calcularMedidaCucharita(producto, peso) {
         default:
             medida = 'Producto no reconocido';
     }
-    document.getElementById('resultado').innerHTML = medida.toFixed(2) + " Cuharaditas";
+    let resultado = document.getElementById('resultado');
+
+    resultado.innerHTML = medida.toFixed(2) + " Tazas";
+
+    resultado.classList.add('animate');
+    setTimeout(function () {
+        resultado.classList.remove('animate');
+    }, 300);
     return medida.toFixed(2);
 }
